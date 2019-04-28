@@ -1,0 +1,104 @@
+/* TYPOGRAPHIE */
+@font-face {
+  font-family: "anicm";
+  src: url("typo/anicm___.ttf");
+}
+.navbar a {
+  font-family: "anicm";
+  font-size: 80%;
+  color: white;
+}
+
+@font-face {
+  font-family: "partybusiness";
+  src: url("typo/partybusiness.ttf");
+}
+.rond {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 5px solid orange;
+}
+
+.cercle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 20px solid yellow;
+  box-shadow: 10px 10px 10px 4px orange, 10px 10px 10px 4px orange inset;
+}
+
+#multicercle > div {
+  margin-left: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#multicercle > div div.ring:nth-child(1) {
+  margin-left: -10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 3px solid dimgrey;
+}
+#multicercle > div div.ring:nth-child(2) {
+  margin-left: -20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 6px solid dimgrey;
+}
+#multicercle > div div.ring:nth-child(3) {
+  margin-left: -30px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 9px solid dimgrey;
+}
+#multicercle > div div.ring:nth-child(4) {
+  margin-left: -40px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 12px solid dimgrey;
+}
+#multicercle > div div.ring:nth-child(5) {
+  margin-left: -50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 15px solid dimgrey;
+}
+#multicercle > div div.ring:nth-child(6) {
+  margin-left: -60px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 18px solid dimgrey;
+}
+
+body {
+  background-image: url(image/bg_light.png);
+}
+
+p {
+  text-align: center;
+  font-family: "anicm";
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=precious.css.map */

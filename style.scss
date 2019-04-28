@@ -1,0 +1,60 @@
+@import "mixins.scss";
+
+$jaune: yellow ;
+$orange: orange;
+
+/* TYPOGRAPHIE */
+
+@font-face 
+{ 	
+    font-family: 'anicm';
+    src: url('typo/anicm___.ttf');
+}
+
+.navbar a
+{
+    font-family: 'anicm';
+    font-size: 80%;
+    color: white;
+}
+
+@font-face 
+{ 	
+    font-family: 'partybusiness';
+    src: url('typo/partybusiness.ttf');
+}
+
+.rond {
+  @include flex();
+  @include ring(50, orange);
+ }
+
+ .cercle {
+  @include flex();
+   @include ring(200, $jaune);
+  @include shadow();
+ }
+
+ #multicercle > div {
+   margin-left: 400px;
+	@include flex();
+	@for $i from 1 through 6 {
+	  div.ring:nth-child(#{$i}) {
+	  	margin-left: (-20* $i/2)+px;
+	    @include ring(30 * $i, dimgrey);
+	  }
+	}
+}
+
+body
+{
+    background-image:url(image/bg_light.png);
+}
+
+p
+{
+  text-align: center;
+  font-family: 'anicm';
+  font-size: 30px;
+}
+

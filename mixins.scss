@@ -1,0 +1,17 @@
+@mixin ring($size, $color) {
+	width: $size+px;
+	height: $size+px;
+	border-radius: 50%;
+	background-color: transparent;
+	border: ($size / 10)+px solid $color;
+}
+@mixin flex() {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin shadow ($bordure: 10px, $rebord: 4px, $colorshadow: orange){
+    box-shadow: $bordure $bordure $bordure $rebord $colorshadow,
+    $bordure $bordure $bordure $rebord $colorshadow inset; 
+}
